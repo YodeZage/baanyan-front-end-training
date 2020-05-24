@@ -1,0 +1,72 @@
+$ git init
+
+$ git config --global
+$ git config --global user.name "xxx"
+$ git config --global user.email "xxx@xxx.xxx"
+
+git [commands] --help
+
+$ git add [file name]
+$ git add .
+$ git commit
+$ git commit -m "Commit message"
+
+$ git log
+$ git log --stat
+$ git log -n
+$ git log --graph --oneline [branch name 1] [branch name 2]
+$ git reflog
+
+$ git diff [commit ID 1] [commit ID 2]
+$ git diff
+$ git diff --staged
+
+$ git branch
+$ git branch -v
+$ git branch -r
+$ git branch [new branch]
+$ git checkout [branch name]
+$ git checkout -b [new branch]
+$ git merge [branch name]
+$ git merge [master] [branch name]
+$ git merge [branch name] --no-ff
+$ git show [commit ID Old]
+$ git branch -d [old branch]
+$ git branch -D [old branch]
+$ git rebase [branch name]
+$ git cherry-pick [other branch commit ID]
+
+$ git clone [URL]
+$ git remote
+$ git remote add [remote name] [URL]
+$ git remote -v
+$ git push [remote name] [current branch name]
+$ git fetch [remote name]
+$ git merge master origin/master
+$ git pull [remote name] [remote branch name]
+$ git pull [remote name] [remote branch name]:[new branch name]
+
+$ git checkout [commit ID/HEAD/branch name]
+$ git checkout [commit ID/HEAD/branch name]
+$ git switch -
+$ git checkout [commit ID/HEAD/branch name]
+$ git switch -c [newBranch]
+$ git reset [commit ID/HEAD/branch name] --mixed
+$ git reset [commit ID/HEAD/branch name] --soft
+$ git reset [commit ID/HEAD/branch name] --hard
+$git reset [commit ID/HEAD/branch name]^^
+$git reset [commit ID/HEAD/branch name]~n
+$git revert [commit ID/HEAD/branch name]
+
+$ git commit --amend
+$ git commit --fixup [commit ID]
+$ git rebase -i HEAD~[1~n]
+	pick
+	reword
+	edit
+	squash
+	fixup
+$ git rebase --interactive --autosquash [commit ID]
+
+$ git rm --cached [file 1]
+$ git rm -r --cached .
