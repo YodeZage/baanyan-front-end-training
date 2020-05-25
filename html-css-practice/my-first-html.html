@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My First HTML</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="This website is for learning only">
+        <meta name="author" content="Hello World">
+    </head>
+    <body>
+        <p>I am first paragraph</p>
+        <img src="../assets/general-image-example.jpg" alt=general-image-example
+            width='256px' height="160px" custom="I am custom">
+    
+        
+        <div>
+            I am parent element
+            <p>I am nesting element</p>
+        </div>
+
+        <span>I am inline element 1</span>
+        <span>I am inline element 2</span>
+        <div>I am block element 1</div>
+        <div>I am block element 2</div>
+        
+        <a href="./my-first-html.html">I am my self (relative URL)</a>
+        <a href="https://google.com">I am my Google (absolute URL)</a>
+
+        <div>
+            Can you print &lt;div&gt;&lt;/div&gt;
+            <br>
+
+
+            And       also &yen; and O&#770; &nbsp; <strong>I am strong</strong>
+            <br>
+            Can you solve x<sup>2</sup> = 4?
+        </div>
+
+        <ol>
+            <li>I am element one</li>
+            <li>I am element two</li>
+            <li>I am element three</li>
+            <ul>
+                <li>I am nesting 1</li>
+                <li>I am nesting 2</li>
+                <li>I am nesting 3</li>
+            </ul>
+        </ol>
+
+        <img src="../assets/general-image-example.jpg" alt=general-example-image>
+        <audio src="../assets/general-audio-example.wav" controls>This is audio example</audio>
+        <video src="../assets/general-video-example.mp4" controls autoplay muted
+            width="280" height="160">This is video example</video>
+        <!-- <video controls>
+            <source src="rabbit320.mp4" type="video/mp4">
+            <source src="rabbit320.webm" type="video/webm">
+            <track kind="subtitles" src="subtitles_en.vtt" srclang="en">
+            <p>Browser not support video, click<a href="rabbit320.mp4">here</a>to watch</p>
+        </video> -->
+
+        <iframe src="../assets/general-html-example.html" width="300" height="200"></iframe>
+    
+        <table>
+            <tr><th>Header One</th><th>Header Two</th><th>Header Three</th></tr>
+            <tr><td>Data 1</td><td>Data 2</td><td>Data 3</td></tr>
+            <tr><td>Data 1</td><td></td><td>Data 3</td></tr>
+            <tr><td rowspan="2">Two Rwo</td><td>Data 2</td><td>Data 3</td></tr>
+            <tr><td>Data 2</td><td>Data 3</td></tr>
+        </table>
+    
+        <form action="" method="POST">
+            <fieldset>
+                <legend>Inputs:</legend>
+                <label>Full Name</label>
+                <input type="text" id="name" name="fullName" value="Hello, World!" disabled>
+                
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="emailAddress" autofocus>
+                
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+                
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date">
+            </fieldset>
+            
+            <label for="cars">Car</label>
+            <select id="cars" name="car" multiple>
+                <option value="toyota">Toyota</option>
+                <option value="honda">Honda</option>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+            </select>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>

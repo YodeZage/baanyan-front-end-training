@@ -1,0 +1,4 @@
+Official HTML reference and FAQ
+    https://developer.mozilla.org/en-US/docs/Web/HTML
+    https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto
+    https://validator.w3.org/
