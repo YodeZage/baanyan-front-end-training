@@ -1,0 +1,83 @@
+:root {
+    --input-bg-color: rgb(241, 243, 250);
+    --input-text-color: rgb(108, 117, 125);
+    --submit-bg-color: rgb(82, 94, 242);
+    --submit-bg-color-hover: rgb(60, 75, 241);
+    --color-white: rgb(255, 255, 255);
+    --color-black: rgb(0, 0, 0);
+}
+
+.search-container {
+    width: 315px;
+    height: 38px;
+}
+
+.search-icon {
+    box-sizing: border-box;
+    width: 38px;
+    height: 38px;
+    padding: 10px;
+    margin: 0;
+    border: none;
+    background-color: var(--input-bg-color);
+    float: left;
+}
+
+.search-input {
+    display: inline-block;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: var(--input-bg-color);
+    color: var(--input-text-color);
+    float: left;
+}
+
+.search-input:focus {
+    outline: none;
+}
+
+.search-submit {
+    display: inline-block;
+    width: 75px;
+    height: 100%;
+    color: var(--color-white);
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: var(--submit-bg-color);
+}
+
+.search-submit:hover {
+    cursor: pointer;
+    background-color: var(--submit-bg-color-hover);
+}
+
+
+
+
+.nine-dots-container {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: var(--input-bg-color);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nine-dots-row {
+    display: flex;
+    flex: 1 1 50px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nine-dots-item {
+    width: 7px;
+    height: 7px;
+    background-color: var(--color-black);
+}
