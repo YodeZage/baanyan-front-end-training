@@ -1,0 +1,33 @@
+.container-two {
+    width: 100px;
+    height: 100px;
+    border: 1px solid rgb(13, 199, 143);
+}
+
+.main-container {
+    color: brown;
+    font-weight: 600;
+}
+
+.container-three {
+    width: 200px;
+    height: 200px;
+    border: 1px solid rgb(199, 35, 13);
+}
+
+.dropdown-container {
+    display: none;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid black;
+}
+
+.dropdown-element {
+    padding: 5px 5px 5px 10px;
+}
+
+.dropdown-element:hover {
+    cursor: pointer;
+    background-color: rgba(52, 164, 235, .7);
+}
