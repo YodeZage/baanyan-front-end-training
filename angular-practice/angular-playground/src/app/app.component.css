@@ -1,0 +1,7 @@
+.container {
+    display: block;
+    width: 300px;
+    height: 200px;
+    margin: 50px 0;
+    border: 2px solid #33bbe4;
+}
