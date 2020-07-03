@@ -1,2 +1,6 @@
-<input type="text" (change)="valueChanged($event.target.value)">
-<app-nav class="container" [message]="messages"></app-nav>
+<div class="nav-container">
+    <a routerLink="/first-practice" class="nav-item">First practice (Home)</a>
+    <a routerLink="/forms" class="nav-item">Form practice</a>
+</div>
+
+<router-outlet></router-outlet>

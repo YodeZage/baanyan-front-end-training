@@ -1,0 +1,11 @@
+.container {
+    display: block;
+    width: 300px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    color: #ffffff;
+    padding: 100px 25px;
+    margin: 50px auto;
+    background-color: #33bbe4;
+}

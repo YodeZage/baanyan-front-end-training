@@ -1,0 +1,9 @@
+<form (ngSubmit)="onSubmit()" #heroForm="ngForm">
+    <div>
+        <label>Full Name</label>
+        <input type="text" id="fullName" [(ngModel)]="model.name" name="full name">
+    </div>
+    <div>
+        <button type="submit">Submit</button>
+    </div>
+</form>
