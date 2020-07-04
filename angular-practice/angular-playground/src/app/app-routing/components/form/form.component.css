@@ -17,3 +17,11 @@
 .container {
     margin: 80px auto;
 }
+
+.template-form {
+    color: #27d830;
+}
+
+.reactive-form {
+    color: #00a2ff;
+}

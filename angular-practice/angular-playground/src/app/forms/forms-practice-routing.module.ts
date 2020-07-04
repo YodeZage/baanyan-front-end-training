@@ -7,11 +7,11 @@ import {
 } from './components';
 
 const routes: Routes = [
-  {
-    path: '',
-    redirectTo: '/forms/reactive-form',
-    pathMatch: 'full'
-  },
+  // {
+  //   path: '',
+  //   redirectTo: '/forms/reactive-form',
+  //   pathMatch: 'full'
+  // },
   {
     path: 'reactive-form',
     component: ReactiveFormComponent

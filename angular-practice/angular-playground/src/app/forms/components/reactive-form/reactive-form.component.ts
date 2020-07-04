@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+
+import { FormValidators } from '../../../core/form-validators';
 
 @Component({
   selector: 'app-reactive-form',
@@ -7,9 +10,46 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReactiveFormComponent implements OnInit {
 
-  constructor() { }
+  readonly superPowerList: string[] = [
+    'Super fast', 'Super flexible',
+    'Super rich', 'Super hot'
+  ];
+
+  heroForm: FormGroup;
+
+  constructor(private formBuilder: FormBuilder) { }
 
   ngOnInit(): void {
+    this.createHeroForm();
   }
 
+  submitHeroForm(): void {
+    if (this.heroForm.valid) {
+      console.log(this.heroForm);
+    } else {
+      console.log('Form is NOT submitted!');
+    }
+  }
+
+  private createHeroForm(): void {
+    this.heroForm = this.formBuilder.group({
+      username: ['', {
+        updateOn: 'blur',
+        validators: [
+          Validators.required,
+          Validators.minLength(2),
+          FormValidators.Username()
+        ]
+      }],
+      age: ['', {
+        updateOn: 'blur',
+        validators: [
+          Validators.required
+        ]
+      }],
+      superPower: [this.superPowerList[2], {
+        updateOn: 'blur'
+      }]
+    });
+  }
 }

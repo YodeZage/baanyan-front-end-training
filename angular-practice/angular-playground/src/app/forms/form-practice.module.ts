@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { FormPracticeRoutingModule } from './forms-practice-routing.module';
+import { CoreModule } from '../core/core.module';
 
 import {
   ReactiveFormComponent,
@@ -16,7 +18,9 @@ import {
   imports: [
     CommonModule,
     FormPracticeRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    CoreModule
   ],
   exports: [
     ReactiveFormComponent,

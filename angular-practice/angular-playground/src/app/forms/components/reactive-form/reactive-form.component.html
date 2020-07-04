@@ -1,1 +1,23 @@
-<p>reactive-form works!</p>
+<div class="title">Reactive form</div>
+
+<form [formGroup]="heroForm" (ngSubmit)="submitHeroForm()" class="container">
+    <div class="field">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" class="inputs" formControlName="username">
+        <app-form-error-message [fieldControl]="heroForm.get('username')"></app-form-error-message>
+    </div>
+    <div class="field">
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" class="inputs" formControlName="age">
+        <app-form-error-message [fieldControl]="heroForm.get('age')"></app-form-error-message>
+    </div>
+    <div class="field">
+        <label for="superPower">Super Power</label>
+        <select name="superPower" id="superPower" class="inputs">
+            <option *ngFor="let pow of superPowerList" [value]="pow">{{ pow }}</option>
+        </select>
+    </div>
+    <div class="field">
+        <button type="submit">Submit</button>
+    </div>
+</form>
