@@ -1,6 +1,10 @@
-<p>{{ dataMessage }}</p>
+<div class="title">{{ dataMessage }}</div>
 
-<a routerLink="/forms/template-form" class="nav-item">Template form</a>
-<a routerLink="/forms/reactive-form" class="nav-item">Reactive form</a>
+<div class="nav">
+    <a routerLink="/forms/template-form" class="nav-item">Template form</a>
+    <a routerLink="/forms/reactive-form" class="nav-item">Reactive form</a>
+</div>
 
-<router-outlet></router-outlet>
+<div class="container">
+    <router-outlet></router-outlet>
+</div>

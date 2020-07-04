@@ -1,0 +1,17 @@
+.container {
+    width: 300px;
+    margin: 20px auto;
+}
+
+.field {
+    margin: 20px;
+}
+
+.field .inputs{
+    display: block;
+}
+
+.errorMessage {
+    color: #ff0000;
+    font-weight: 600;
+}

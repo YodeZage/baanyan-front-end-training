@@ -1,4 +1,19 @@
+.title {
+    margin: 35px;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.nav {
+    text-align: center;
+}
+
 .nav-item {
     margin: 10px;
     text-decoration: none;
+}
+
+.container {
+    margin: 80px auto;
 }

@@ -1,9 +1,27 @@
-<form (ngSubmit)="onSubmit()" #heroForm="ngForm">
-    <div>
-        <label>Full Name</label>
-        <input type="text" id="fullName" [(ngModel)]="model.name" name="full name">
+<form (ngSubmit)="onSubmit()" #heroForm="ngForm" class="container">
+    <div class="field">
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" name="full name" class="inputs"
+            [(ngModel)]="model.name" (change)="checkNameField()"
+            required>
+        <span class="errorMessage">{{ nameError }}</span>
     </div>
-    <div>
+    <div class="field">
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" class="inputs"
+            [(ngModel)]="model.age" #age="ngModel"
+            required>
+        <span class="errorMessage" [hidden]="age.valid">Required.</span>
+    </div>
+    <div class="field">
+        <label for="superPower">Super Power</label>
+        <select name="super power" id="superPower" class="inputs"
+            [(ngModel)]="model.superName"
+            required>
+            <option *ngFor="let pow of superPowerList" [value]="pow">{{ pow }}</option>
+        </select>
+    </div>
+    <div class="field">
         <button type="submit">Submit</button>
     </div>
 </form>
